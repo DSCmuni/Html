@@ -1,0 +1,24 @@
+<html>
+        <style>
+            p{
+                font-size: xx-large;
+                width: 100px;
+                height: 100px;
+
+            }
+        </style>
+   
+        <body bgcolor="lavender"></body>
+        <p id="blink"> Warning </p>
+        <script>        
+            var blink = document.getElementById("blink");
+            setInterval(function() {
+                blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+            }, 200);
+    </script>
+        <br/>
+        <marquee width="60%" direction="up" height="100px">
+            read the message
+        </marquee>
+    </body>
+</html>
